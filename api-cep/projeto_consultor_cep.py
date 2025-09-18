@@ -8,9 +8,10 @@ def consulta_enderecos(dados_do_endereco):
     print(f"Estado: {dados_endereco.get('uf', 'N/A')}")
     print(f"CEP: {dados_endereco.get('cep', 'N/A')}")
     print("---------------------------\n")
-
+print("Bem vindo ao Consultor de Endereços!")
+print("Digite o CEP no formato 00000000 ou 'sair' para terminar.")
 while True:
-    cep_input = input("Bem vindo, insira o cep que deseja consultar: (formato - 00000000)")
+    cep_input = input("Insira o CEP que deseja consultar: ")
     if cep_input.lower() == 'sair':
         break
 
